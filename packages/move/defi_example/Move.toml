@@ -1,0 +1,17 @@
+[package]
+name = "defi_example"
+edition = "2024.beta" # edition = "legacy" to use legacy (pre-2024) Move
+# license = ""           # e.g., "MIT", "GPL", "Apache 2.0"
+# authors = ["..."]      # e.g., ["Joe Smith (joesmith@noemail.com)", "John Snow (johnsnow@noemail.com)"]
+
+[dependencies]
+usdc = { git = "https://github.com/circlefin/stablecoin-sui.git", subdir = "packages/usdc", rev = "master" }
+date = { r.mvr = "@potatoes/date" }
+
+[addresses]
+defi_coins = "0x0"
+
+[dev-dependencies]
+
+[dev-addresses]
+
