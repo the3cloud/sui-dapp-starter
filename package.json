@@ -2,6 +2,20 @@
   "name": "sui-example-starter",
   "version": "0.1.0",
   "description": "Sui dApp Starter",
+  "scripts": {
+    "localnet:start": "pnpm --filter move localnet:start && pnpm localnet:explorer:start",
+    "localnet:stop": "pnpm --filter move localnet:stop && pnpm localnet:explorer:stop",
+    "localnet:status": "pnpm --filter move localnet:status",
+    "localnet:faucet": "pnpm --filter move localnet:faucet",
+    "localnet:regen": "pnpm --filter move localnet:regen && pnpm localnet:explorer:start",
+    "localnet:update": "pnpm --filter move localnet:update && pnpm localnet:explorer:start",
+    "localnet:deploy": "pnpm --filter move localnet:deploy",
+    "localnet:deploy:no-dependency-check": "pnpm --filter move localnet:deploy:no-dependency-check",
+    "localnet:address": "pnpm --filter move localnet:address",
+    "localnet:explorer:start":  "pnpm --filter move localnet:explorer:start",
+    "localnet:explorer:stop":  "pnpm --filter move localnet:explorer:stop",
+    "localnet:explorer:restart":  "pnpm --filter move localnet:explorer:restart"
+  },
   "engines": {
     "node": ">=20"
   },
